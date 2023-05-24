@@ -131,15 +131,15 @@ namespace Calculadora
             Console.Clear();
 
             Console.WriteLine("Valor :");
-            float v1 = float.Parse(Console.ReadLine());
+            double v1 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Porcentagem do desconto:");
-            float v2 = float.Parse (Console.ReadLine());
+            double v2 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("");
 
-            float vD = (v2 / 100) * v1;
-            float resultado = v1 - vD; 
+            double vD = (v2 / 100) * v1;
+            double resultado = v1 - vD; 
             Console.WriteLine($"O valor após o desconto é{resultado}");
             Console.ReadLine();
             Menu();
